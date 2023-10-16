@@ -1,0 +1,41 @@
+{
+    "name": "h2o-work/laravel-shared-cache",
+    "description": "Easy to use cache for laravel",
+    "keywords": [
+        "h2o-work",
+        "laravel",
+        "shared-cache",
+        "cache"
+    ],
+    "homepage": "https://github.com/h2odumpling/laravel-shared-cache",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "H2odumpling",
+            "email": "h2odumpling@vip.qq.com",
+            "homepage": "https://github.com/h2odumpling",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "H2o\\SharedCache\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "H2o\\SharedCache\\SharedCacheServiceProvider"
+            ]
+        }
+    }
+}
